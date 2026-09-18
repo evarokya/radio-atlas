@@ -24,6 +24,7 @@ import {
   softwareApplicationJsonLd,
   websiteJsonLd,
 } from "@/lib/seo/structured-data";
+import { verificationMetadata } from "@/lib/seo/verification";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -64,6 +65,7 @@ export const metadata: Metadata = {
     "free radio streaming",
   ],
   alternates: { canonical: "/" },
+  verification: verificationMetadata(),
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
